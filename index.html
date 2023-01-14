@@ -50,6 +50,30 @@
         </nav>
     </header>
 
+    <section>
+        <script>
+            window.addEventListener('mouseover', initLandbot, { once: true });
+            window.addEventListener('touchstart', initLandbot, { once: true });
+            var myLandbot;
+            function initLandbot() {
+              if (!myLandbot) {
+                var s = document.createElement('script');s.type = 'text/javascript';s.async = true;
+                s.addEventListener('load', function() {
+                  var myLandbot = new Landbot.Livechat({
+                    configUrl: 'https://storage.googleapis.com/landbot.online/v3/H-1456243-VAQQNQJKZQKNX1WF/index.json',
+                  });
+                });
+                s.src = 'https://cdn.landbot.io/landbot-3/landbot-3.0.0.js';
+                var x = document.getElementsByTagName('script')[0];
+                x.parentNode.insertBefore(s, x);
+              }
+            }
+            </script>
+
+    </section>
+    
+
+
     <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
@@ -423,29 +447,7 @@
         <script src="https://account.snatchbot.me/script.js"></script><script>window.sntchChat.Init(308999)</script> 
     </section>
 -->
-    <section>
-        <script>
-            window.addEventListener('mouseover', initLandbot, { once: true });
-            window.addEventListener('touchstart', initLandbot, { once: true });
-            var myLandbot;
-            function initLandbot() {
-              if (!myLandbot) {
-                var s = document.createElement('script');s.type = 'text/javascript';s.async = true;
-                s.addEventListener('load', function() {
-                  var myLandbot = new Landbot.Livechat({
-                    configUrl: 'https://storage.googleapis.com/landbot.online/v3/H-1456243-VAQQNQJKZQKNX1WF/index.json',
-                  });
-                });
-                s.src = 'https://cdn.landbot.io/landbot-3/landbot-3.0.0.js';
-                var x = document.getElementsByTagName('script')[0];
-                x.parentNode.insertBefore(s, x);
-              }
-            }
-            </script>
-
-    </section>
     
-
     <footer class="bg-dark p-2 bg-opacity-10">
 
         <div class="container ">
